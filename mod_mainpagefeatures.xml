@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>Main Page Features</name>
+    <author>Matthew Sedlar</author>
+    <version>0.0.1</version>
+    <description>A simple module for displaying rotating feature boxes.</description>
+    <files>
+        <filename>mod_mainpagefeatures.xml</filename>
+        <filename module="mod_mainpagefeatures">mod_mainpagefeatures.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<!-- Box one -->
+				<field name="headline_one" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
+				<field name="headline_one_link" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
+				<field name="headline_one_image" type="filelist" default="" label="Select a file" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
+				<field name="headline_one_text" type="textarea" default="default" label="Enter some html" description="" rows="10" cols="5" filter="raw"/>
+
+				<!-- Box two -->
+				<field name="headline_two" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
+				<field name="headline_two_link" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
+				<field name="headline_two_image" type="filelist" default="" label="Select a file" description="" directory="images/frontpage" filter="" exclude="" stripext="" />	
+				<field name="headline_two_text" type="textarea" default="default" label="Enter some html" description="" rows="10" cols="5" filter="raw"/>
+
+				<!-- Box three -->
+				<field name="headline_three" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
+				<field name="headline_three_link" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
+				<field name="headline_three_image" type="filelist" default="" label="Select a file" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
+				<field name="headline_three_text" type="textarea" default="default" label="Enter some html" description="" rows="10" cols="5" filter="raw"/>
+			</fieldset>
+		</fields>
+    </config>
+</extension>
+

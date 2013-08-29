@@ -15,22 +15,23 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<!-- Box one -->
-				<field name="headline_one" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
-				<field name="headline_one_link" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
-				<field name="headline_one_image" type="filelist" default="" label="Select a file" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
-				<field name="headline_one_text" type="textarea" default="default" label="Enter some html" description="" rows="10" cols="5" filter="raw"/>
+				<field name="headline_one" type="text" default="" label="Headline" description="Enter some description" />
+				<field name="headline_one_link" type="text" default="http://www.cepr.net" label="Link" description="Enter some description" />
+				<field name="headline_one_image" type="filelist" default="" label="Select an image" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
+				<field name="headline_one_text" type="textarea" default="default" label="Enter some text" description="" rows="10" cols="5" filter="raw"/>
 
 				<!-- Box two -->
-				<field name="headline_two" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
-				<field name="headline_two_link" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
-				<field name="headline_two_image" type="filelist" default="" label="Select a file" description="" directory="images/frontpage" filter="" exclude="" stripext="" />	
-				<field name="headline_two_text" type="textarea" default="default" label="Enter some html" description="" rows="10" cols="5" filter="raw"/>
+				<field name="headline_two" type="text" default="" label="Headline" description="Enter some description" />
+				<field name="headline_two_link" type="text" default="http://www.cepr.net" label="Link" description="Enter some description" />
+				<field name="headline_two_image" type="filelist" default="" label="Select an image" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
+				<field name="headline_two_text" type="textarea" default="default" label="Enter some text" description="" rows="10" cols="5" filter="raw"/>
 
 				<!-- Box three -->
-				<field name="headline_three" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
-				<field name="headline_three_link" type="text" default="8" label="Enter some text" description="Enter some description" filter="integer" />
-				<field name="headline_three_image" type="filelist" default="" label="Select a file" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
-				<field name="headline_three_text" type="textarea" default="default" label="Enter some html" description="" rows="10" cols="5" filter="raw"/>
+				<field name="headline_three" type="text" default="" label="Headline" description="Enter some description" />
+				<field name="headline_three_link" type="text" default="http://www.cepr.net" label="Link" description="Enter some description" />
+				<field name="headline_three_image" type="filelist" default="" label="Select an image" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
+				<field name="headline_three_text" type="textarea" default="" label="Enter some text" description="" rows="10" cols="5" filter="raw"/>
+
 			</fieldset>
 		</fields>
     </config>

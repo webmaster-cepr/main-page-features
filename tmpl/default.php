@@ -3,22 +3,9 @@
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
-$document = JFactory::getDocument();
-$document->addScript('http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
-$document = JFactory::getDocument();
-$document->addScriptDeclaration('
-    window.event("domready", function() {
-        $(function(){
 
-		$( document.getElementById('feature_two') ).css("display", "none");
-		$( document.getElementById('feature_three') ).css("display", "none");
 
-		});
-    });
-');
-?>
-
-<?php 
+// Here's where we turn the parameters into variables
 
 $headline_one = $params->get('headline_one');
 $headline_two = $params->get('headline_two');
@@ -61,7 +48,7 @@ $headline_three_text = $params->get('headline_three_text');
 		
 			<?php 
 					
-			echo '<br/><br/><img src="/images/frontpage/' . $headline_one_image . '" alt=""/><br/><br/>'; 
+			echo '<br/><br/><img src="images/frontpage/' . $headline_one_image . '" alt=""/><br/><br/>'; 
 					
 			?>
 		
@@ -102,7 +89,7 @@ $headline_three_text = $params->get('headline_three_text');
 		
 			<?php 
 					
-			echo '<br/><br/><img src="/images/frontpage/' . $headline_two_image . '" alt=""/><br/><br/>'; 
+			echo '<br/><br/><img src="images/frontpage/' . $headline_two_image . '" alt=""/><br/><br/>'; 
 					
 			?>
 		
@@ -143,7 +130,7 @@ $headline_three_text = $params->get('headline_three_text');
 		
 			<?php 
 					
-			echo '<br/><br/><img src="/images/frontpage/' . $headline_three_image . '" alt=""/><br/><br/>'; 
+			echo '<br/><br/><img src="images/frontpage/' . $headline_three_image . '" alt=""/><br/><br/>'; 
 					
 			?>
 		

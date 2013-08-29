@@ -1,6 +1,6 @@
 README
 
-This is an UNDER CONSTRUCTION Joomla 2.5 module that displays content in a rotating feature box.
+This is a working Joomla 2.5 module that displays content in a rotating feature box.
 
 AUTHORS
 

@@ -2,7 +2,7 @@
 <extension type="module" version="2.5.0" client="site" method="upgrade">
     <name>Main Page Features</name>
     <author>Matthew Sedlar</author>
-    <version>0.0.1</version>
+    <version>1.0</version>
     <description>A simple module for displaying rotating feature boxes.</description>
     <files>
         <filename>mod_mainpagefeatures.xml</filename>
@@ -15,23 +15,29 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<!-- Box one -->
-				<field name="headline_one" type="text" default="" label="Headline" description="Enter some description" />
-				<field name="headline_one_link" type="text" default="http://www.cepr.net" label="Link" description="Enter some description" />
+				<field name="headline_one" type="text" default="" label="Headline" description="Enter a headline" />
+				<field name="headline_one_link" type="text" default="http://www.cepr.net" label="Link" description="Enter a link" />
 				<field name="headline_one_image" type="filelist" default="" label="Select an image" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
-				<field name="headline_one_text" type="textarea" default="default" label="Enter some text" description="" rows="10" cols="5" filter="raw"/>
+				<field name="headline_one_text" type="textarea" default="default" label="Enter some text" description="" rows="10" cols="10" filter="raw"/>
 
 				<!-- Box two -->
-				<field name="headline_two" type="text" default="" label="Headline" description="Enter some description" />
-				<field name="headline_two_link" type="text" default="http://www.cepr.net" label="Link" description="Enter some description" />
+				<field name="headline_two" type="text" default="" label="Headline" description="Enter a headline" />
+				<field name="headline_two_link" type="text" default="http://www.cepr.net" label="Link" description="Enter a link" />
 				<field name="headline_two_image" type="filelist" default="" label="Select an image" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
-				<field name="headline_two_text" type="textarea" default="default" label="Enter some text" description="" rows="10" cols="5" filter="raw"/>
+				<field name="headline_two_text" type="textarea" default="default" label="Enter some text" description="" rows="10" cols="10" filter="raw"/>
 
 				<!-- Box three -->
-				<field name="headline_three" type="text" default="" label="Headline" description="Enter some description" />
-				<field name="headline_three_link" type="text" default="http://www.cepr.net" label="Link" description="Enter some description" />
+				<field name="headline_three" type="text" default="" label="Headline" description="Enter a headline" />
+				<field name="headline_three_link" type="text" default="http://www.cepr.net" label="Link" description="Enter a link" />
 				<field name="headline_three_image" type="filelist" default="" label="Select an image" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
-				<field name="headline_three_text" type="textarea" default="" label="Enter some text" description="" rows="10" cols="5" filter="raw"/>
+				<field name="headline_three_text" type="textarea" default="" label="Enter some text" description="" rows="10" cols="10" filter="raw"/>
 
+				<!-- Box four -->
+				<field name="headline_four" type="text" default="" label="Headline" description="Enter a headline" />
+				<field name="headline_four_link" type="text" default="http://www.cepr.net" label="Link" description="Enter a link" />
+				<field name="headline_four_image" type="filelist" default="" label="Select an image" description="" directory="images/frontpage" filter="" exclude="" stripext="" />
+				<field name="headline_four_text" type="textarea" default="" label="Enter some text" description="" rows="10" cols="10" filter="raw"/>				
+				
 			</fieldset>
 		</fields>
     </config>

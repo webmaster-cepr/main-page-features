@@ -34,15 +34,9 @@ $headline_four_text = $params->get('headline_four_text');
 
 		<?php 
 		
-		  if ($headlink_one_link == '') { 
-		  echo '<strong>' . $headline_one . '</strong>';
-		  } 
-
-		  else { 
-		  echo '<strong><a href="' . $headline_one_link . '" target="_blank">' . $headline_one . '</a></strong>';
-		  }
-	  
-		  ?>	
+			echo '<strong><a href="' . $headline_one_link . '" target="_blank">' . $headline_one . '</a></strong>';
+		  
+		?>	
 
 	</span>
 
@@ -75,15 +69,9 @@ $headline_four_text = $params->get('headline_four_text');
 
 		<?php 
 		
-		  if ($headline_two_link == '') { 
-		  echo '<strong>' . $headline_two . '</strong>';
-		  } 
-
-		  else { 
-		  echo '<strong><a href="' . $headline_two_link . '" target="_blank">' . $headline_two . '</a></strong>';
-		  }
-	  
-		  ?>	
+			echo '<strong><a href="' . $headline_two_link . '" target="_blank">' . $headline_two . '</a></strong>';
+		  
+		?>	
 
 	</span>
 
@@ -116,15 +104,9 @@ $headline_four_text = $params->get('headline_four_text');
 
 		<?php 
 		
-		  if ($headlink_three_link == '') { 
-		  echo '<strong>' . $headline_three . '</strong>';
-		  } 
-
-		  else { 
-		  echo '<strong><a href="' . $headline_three_link . '" target="_blank">' . $headline_three . '</a></strong>';
-		  }
-	  
-		  ?>	
+			echo '<strong><a href="' . $headline_three_link . '" target="_blank">' . $headline_three . '</a></strong>';
+		  
+		?>		
 
 	</span>
 
@@ -157,15 +139,9 @@ $headline_four_text = $params->get('headline_four_text');
 
 		<?php 
 		
-		  if ($headlink_four_link == '') { 
-		  echo '<strong>' . $headline_four . '</strong>';
-		  } 
-
-		  else { 
-		  echo '<strong><a href="' . $headline_four_link . '" target="_blank">' . $headline_three . '</a></strong>';
-		  }
-	  
-		  ?>	
+			echo '<strong><a href="' . $headline_four_link . '" target="_blank">' . $headline_four . '</a></strong>';
+		  
+		?>		
 
 	</span>
 

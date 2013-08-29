@@ -16,6 +16,8 @@ http://www.cepr.net.
 
 ChangeLog
 
+* Some headlines were not getting links based on accidentally leftover if/else statements. Fixed.
+
 COPYING/LICENSE
 
 The Joomla software and default templates are copyright 2005-2012 Open Source Matters, Inc. and covered under a GNU General Public License.

@@ -3,8 +3,6 @@
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
-
-
 // Here's where we turn the parameters into variables
 
 $headline_one = $params->get('headline_one');
@@ -96,7 +94,10 @@ $headline_four_text = $params->get('headline_four_text');
 
 		</span>
 
-		<p> 1 | <strong>2</strong> | 3 | 4 </p>
+		<p><a href="javascript:display_feature('feature_one');">1</a> |
+		2 |
+		<a href="javascript:display_feature('feature_three');">3</a> |
+		<a href="javascript:display_feature('feature_four');">4</a></p>
 		
 	</span>
 
@@ -131,7 +132,10 @@ $headline_four_text = $params->get('headline_four_text');
 
 		</span>
 
-		<p> 1 | 2 | <strong>3</strong> | 4</p>
+		<p><a href="javascript:display_feature('feature_one');">1</a> |
+		<a href="javascript:display_feature('feature_two');">2</a> |
+		3 |
+		<a href="javascript:display_feature('feature_four');">4</a></p>
 		
 	</span>
 
@@ -166,7 +170,10 @@ $headline_four_text = $params->get('headline_four_text');
 
 		</span>
 
-		<p> 1 | 2 | 3 | <strong>4</strong></p>
+		<p><a href="javascript:display_feature('feature_one');">1</a> |
+		<a href="javascript:display_feature('feature_two');">2</a> |
+		<a href="javascript:display_feature('feature_three');">3</a> |
+		4</p>
 		
 	</span>
 

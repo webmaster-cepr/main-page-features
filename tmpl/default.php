@@ -58,7 +58,10 @@ $headline_four_text = $params->get('headline_four_text');
 
 		</span>
 		
-		<p> <strong>1</strong> | 2 | 3 | 4</p>
+		<p> <strong>1</strong> | 
+		<a href="javascript:display_feature('feature_two');">2</a> |
+		<a href="javascript:display_feature('feature_three');">3</a> |
+		<a href="javascript:display_feature('feature_four');">4</a></p>
 
 	</span>
 

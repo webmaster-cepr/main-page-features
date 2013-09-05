@@ -1,7 +1,7 @@
     /* Embed this JavaScript in the head tags or reference it externally */
 
 	var features = [];
-    var i = 0;
+   	var i = 0;
 
        
     $(function(){
@@ -46,3 +46,24 @@
 	});    
   
   }  
+  
+  function display_feature(x) {
+ 	 $(function() {
+ 	 	
+ 	 for (var y = 0; y < features.length; y++) {
+ 	 	
+ 	 	if (x == features[y]) {
+ 	 	$(document.getElementById(features[y])).css("display", "block");
+ 	 	clearTimeout(t);
+ 	 	}
+ 		
+ 		else {
+ 		$(document.getElementById(features[y])).css("display", "none");	
+ 		}
+ 	 	
+ 	 }
+ 	 	
+ 	 });
+  	
+  	
+  }

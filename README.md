@@ -15,8 +15,16 @@ WEBSITE
 http://www.cepr.net.
 
 ChangeLog
-* Some headlines were not getting links based on accidentally leftover if/else statements. Fixed.
+
+1.3
+* Time added to parameters. Now user can select number of seconds for the boxes to display. If time is not saved, features will not rotate. Default is 5 seconds.
+* Javascript functions moved inline into the module itself, except the bit that needs to be loaded with the page. That still needs to be placed in the head tags of the template. 
+
+1.2
 * Added ability to select the boxes, stopping the cycle feature.
+
+1.1
+* Some headlines were not getting links based on accidentally leftover if/else statements. Fixed.
 
 COPYING/LICENSE
 

@@ -5,6 +5,8 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
 // Here's where we turn the parameters into variables
 
+$cycle_time = $params->get('cycle_time');
+
 $headline_one = $params->get('headline_one');
 $headline_two = $params->get('headline_two');
 $headline_three = $params->get('headline_three');
@@ -26,6 +28,61 @@ $headline_three_text = $params->get('headline_three_text');
 $headline_four_text = $params->get('headline_four_text');
 
 ?>
+
+<?php
+$document = JFactory::getDocument();
+$document->addScriptDeclaration('
+
+	function cycle_features() {
+  
+	$(function(){
+
+		t = setTimeout("cycle_features()", ' . ($cycle_time * 1000) . ' );
+
+		$(document.getElementById(features[i])).css("display", "none");
+		i++;
+		$(document.getElementById(features[i])).css("display", "block");
+
+		if (i == 1) { 
+
+		$(document.getElementById(features[4])).css("display", "none");
+
+		}
+
+		if (i >= 4) { 
+
+		i %= 1;
+
+		}
+
+	});    
+  
+  }  
+  
+    function display_feature(x) {
+ 	 $(function() {
+ 	 	
+ 	 for (var y = 0; y < features.length; y++) {
+ 	 	
+ 	 	if (x == features[y]) {
+ 	 	$(document.getElementById(features[y])).css("display", "block");
+ 	 	clearTimeout(t);
+ 	 	}
+ 		
+ 		else {
+ 		$(document.getElementById(features[y])).css("display", "none");	
+ 		}
+ 	 	
+ 	 }
+ 	 	
+ 	 });
+  	
+  	
+  }
+  
+');
+?>
+
 
 <div id="feature_one">
 	<span class="feature_header">

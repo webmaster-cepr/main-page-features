@@ -41,7 +41,7 @@ $document->addScriptDeclaration('
 
 		$(document.getElementById(features[i])).css("display", "none");
 		i++;
-		$(document.getElementById(features[i])).css("display", "block");
+		$(document.getElementById(features[i])).fadeIn("slow");
 
 		if (i == 1) { 
 
@@ -101,7 +101,7 @@ $document->addScriptDeclaration('
 		
 			<?php 
 					
-			echo '<br/><br/><img src="images/frontpage/' . $headline_one_image . '" alt=""/><br/><br/>'; 
+			echo '<br/><br/><img src="documents/images/frontpage/' . $headline_one_image . '" alt=""/><br/><br/>'; 
 					
 			?>
 		
@@ -113,10 +113,11 @@ $document->addScriptDeclaration('
 
 		</span>
 		
-		<p> <strong>1</strong> | 
-		<a href="javascript:display_feature('feature_two');">2</a> |
-		<a href="javascript:display_feature('feature_three');">3</a> |
-		<a href="javascript:display_feature('feature_four');">4</a></p>
+            <p> <span id="feature_link"><a name="selected_feature" style="background-color:#CCC">&nbsp;</a></span>
+            <span id="feature_link"><a href="javascript:display_feature('feature_two');">&nbsp;</a></span>
+            <span id="feature_link"><a href="javascript:display_feature('feature_three');">&nbsp;</a></span>
+            <span id="feature_link"><a href="javascript:display_feature('feature_four');">&nbsp;</a></span></p>
+
 
 	</span>
 
@@ -139,7 +140,7 @@ $document->addScriptDeclaration('
 		
 			<?php 
 					
-			echo '<br/><br/><img src="images/frontpage/' . $headline_two_image . '" alt=""/><br/><br/>'; 
+			echo '<br/><br/><img src="documents/images/frontpage/' . $headline_two_image . '" alt=""/><br/><br/>'; 
 					
 			?>
 		
@@ -151,10 +152,11 @@ $document->addScriptDeclaration('
 
 		</span>
 
-		<p><a href="javascript:display_feature('feature_one');">1</a> |
-		2 |
-		<a href="javascript:display_feature('feature_three');">3</a> |
-		<a href="javascript:display_feature('feature_four');">4</a></p>
+                <p> <span id="feature_link"><a href="javascript:display_feature('feature_one');">&nbsp;</a></span>
+                <span id="feature_link"><a name="selected_feature" style="background-color:#CCC">&nbsp;</a></span>
+				<span id="feature_link"><a href="javascript:display_feature('feature_three');">&nbsp;</a></span>
+                <span id="feature_link"><a href="javascript:display_feature('feature_four');">&nbsp;</a></span></p>
+
 		
 	</span>
 
@@ -177,7 +179,7 @@ $document->addScriptDeclaration('
 		
 			<?php 
 					
-			echo '<br/><br/><img src="images/frontpage/' . $headline_three_image . '" alt=""/><br/><br/>'; 
+			echo '<br/><br/><img src="documents/images/frontpage/' . $headline_three_image . '" alt=""/><br/><br/>'; 
 					
 			?>
 		
@@ -189,10 +191,10 @@ $document->addScriptDeclaration('
 
 		</span>
 
-		<p><a href="javascript:display_feature('feature_one');">1</a> |
-		<a href="javascript:display_feature('feature_two');">2</a> |
-		3 |
-		<a href="javascript:display_feature('feature_four');">4</a></p>
+                <p> <span id="feature_link"><a href="javascript:display_feature('feature_one');">&nbsp;</a></span>
+                <span id="feature_link"><a href="javascript:display_feature('feature_two');">&nbsp;</a></span>
+                <span id="feature_link"><a name="selected_feature" style="background-color:#CCC">&nbsp;</a></span>
+				<span id="feature_link"><a href="javascript:display_feature('feature_four');">&nbsp;</a></span></p>
 		
 	</span>
 
@@ -215,7 +217,7 @@ $document->addScriptDeclaration('
 		
 			<?php 
 					
-			echo '<br/><br/><img src="images/frontpage/' . $headline_four_image . '" alt=""/><br/><br/>'; 
+			echo '<br/><br/><img src="documents/images/frontpage/' . $headline_four_image . '" alt=""/><br/><br/>'; 
 					
 			?>
 		
@@ -227,11 +229,11 @@ $document->addScriptDeclaration('
 
 		</span>
 
-		<p><a href="javascript:display_feature('feature_one');">1</a> |
-		<a href="javascript:display_feature('feature_two');">2</a> |
-		<a href="javascript:display_feature('feature_three');">3</a> |
-		4</p>
-		
+                <p> <span id="feature_link"><a href="javascript:display_feature('feature_one');">&nbsp;</a></span>
+                <span id="feature_link"><a href="javascript:display_feature('feature_two');">&nbsp;</a></span>
+				<span id="feature_link"><a href="javascript:display_feature('feature_three');">&nbsp;</a></span>
+                <span id="feature_link"><a name="selected_feature" style="background-color:#CCC">&nbsp;</a></span></p>
+				
 	</span>
 
 </div>

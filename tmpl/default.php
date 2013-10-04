@@ -65,7 +65,7 @@ $document->addScriptDeclaration('
  	 for (var y = 0; y < features.length; y++) {
  	 	
  	 	if (x == features[y]) {
- 	 	$(document.getElementById(features[y])).css("display", "block");
+ 	 	$(document.getElementById(features[y])).fadeIn("slow");
  	 	clearTimeout(t);
  	 	}
  		
